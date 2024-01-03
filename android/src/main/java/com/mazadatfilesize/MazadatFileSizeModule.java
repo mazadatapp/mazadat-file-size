@@ -31,6 +31,9 @@ public class MazadatFileSizeModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void getFileSize(String path, String outputType, Promise promise) {
     File file = new File(path.replace(" ", "\\ "));
+    if(!file.exists()){
+      promise.resolve(-1);
+    }
     float size = (float) file.length();
     if (outputType.equalsIgnoreCase("gb")) {
       size = size / 1000000000.0f;
