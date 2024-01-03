@@ -17,6 +17,6 @@ const MazadatFileSize = NativeModules.MazadatFileSize
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return MazadatFileSize.multiply(a, b);
+export function getFileSize(filePath: string, outputType: string): Promise<number> {
+  return MazadatFileSize.getFileSize(filePath, outputType);
 }
