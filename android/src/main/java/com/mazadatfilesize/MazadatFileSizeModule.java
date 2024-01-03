@@ -30,6 +30,9 @@ public class MazadatFileSizeModule extends ReactContextBaseJavaModule {
   // See https://reactnative.dev/docs/native-modules-android
   @ReactMethod
   public void getFileSize(String path, String outputType, Promise promise) {
+    if(path.startsWith("file://")){
+      path = path.replace("file://","");
+    }
     File file = new File(path.replace(" ", "\\ "));
     if(!file.exists()){
       promise.resolve(-1);
