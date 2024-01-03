@@ -11,11 +11,11 @@ npm install mazadat-file-size
 ## Usage
 
 ```js
-import { multiply } from 'mazadat-file-size';
+import { getFileSize } from 'mazadat-file-size';
 
 // ...
-
-const result = await multiply(3, 7);
+let outputType = 'gb'  // 'mb','kb',''->return bytes
+const result = await getFileSize(/path/to/the/image, outputType);
 ```
 
 ## Contributing
