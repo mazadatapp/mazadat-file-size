@@ -9,7 +9,7 @@ export default function App() {
   React.useEffect(() => {
     let androidPath = "file:///storage/emulated/0/Download/AppName.apk"
     let iosPath = "file:///Users/Karim.Saad/Library/Developer/CoreSimulator/Devices/02997294-C79E-4388-B2F3-FA76BF9E9011/data/Media/DCIM/100APPLE/IMG_0001.JPG"
-    getFileSize(androidPath, "b").then(setResult);
+    getFileSize(iosPath, "b").then(setResult);
   }, []);
 
   return (

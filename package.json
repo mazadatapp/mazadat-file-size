@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karimmazadat/mazadat-file-size.git"
+    "url": "git+https://github.com/mazadatapp/mazadat-file-size.git"
   },
   "author": "karimmazadat <karim.saad@mazad.at> (https://github.com/karimmazadat)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/karimmazadat/mazadat-file-size/issues"
+    "url": "https://github.com/mazadatapp/mazadat-file-size.git/issues"
   },
-  "homepage": "https://github.com/karimmazadat/mazadat-file-size#readme",
+  "homepage": "https://github.com/mazadatapp/mazadat-file-size.git#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
